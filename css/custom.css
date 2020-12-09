@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* our items */
+:root {
+    --color:rgba(226, 56, 56, 0.918);
+    --blur:grey;
+    --link:rgb(77, 77, 238);
+    --hover:#eb3b60;
+}
+
+/* flex everything */
+.child {
+    display: flex;
+}
+.child .img-cover{
+    height: 100vh;
+ 
+
+}
+.child .img-cover  img {
+    height: 100vh;
+    width: 50vw;
+}
+
+/* now flex the form too */
+.form-part{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+.form-part form {
+
+}
+
+.form-part form .form-control {
+    margin-top: 1em;
+}
+.form-part form .btn {
+    margin-top: 1em;
+}
+
+.form-part span p{
+    color: var(--blur);
+}
+/* style link */
+.form-part span a{
+    color:rgb(61, 59, 59) ;
+    text-decoration: none;
+    font-weight: bold       ;
+}
+
+/* for mobile view now */
+@media screen and (min-width:200px) and (max-width:768px){
+   .img-cover{
+       display: none;
+   }
+   /* now align the form to the middle */
+   .form-part{
+       display: flex;
+       width: 100vw;
+       height: 100vh;
+
+   }
+}
