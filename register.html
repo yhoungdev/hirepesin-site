@@ -62,8 +62,11 @@
                     <input type="text" name="first_name" class="form-control" placeholder="first name" required/>
                     <input type="text" name="second_name" class="form-control" placeholder="second name" required/>
                     <input type="email" name="mail" class="form-control" placeholder="sample@gmail.com" required/>
-                    <input type="password" name="password" class="form-control" placeholder="password" required/> 
-                    <input type="password" name="confirm_password" class="form-control" placeholder="password" required/> 
+                        <p class="emalErr"></p>
+                    <input type="password" name="password" class="form-control" maxlength="10" placeholder="password" required/> 
+                        <p class='pass_error'></p>
+                    <input type="password" name="confirm_password" class="form-control" maxlength="10" placeholder="confirm password" required/> 
+                        <p class="confirm_error"></p>
                     <input type="submit" class="btn btn-block btn-success  center" value="Signup">
                     
                     <span>
@@ -80,6 +83,7 @@
     <script src="js/typed.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="./js/validation.js" crossorigin="anonymous"></script>
     <script>
          AOS.init({
             duration: 800,
